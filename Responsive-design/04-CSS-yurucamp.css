@@ -1,0 +1,234 @@
+/* -------------------- */
+/*  common for PC & SP  */
+/* -------------------- */
+
+html{
+    background-color: white;
+    font-family: 'Roboto', sans-serif; 
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style: none;
+}
+
+h6{
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+header{
+    color: white;
+    background-color: #333;
+}
+
+nav a{
+    color: white;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color:#f17e0a;
+}
+
+article{
+    color: white;
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 280px;
+    padding: 10px 25px;
+    background-color: white;
+    color: #333;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #f17e0a;
+    color: white;
+}
+
+.main-container{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 36px;
+}
+
+#about {
+    background-color: #333;
+}
+
+section{
+    color: #333;
+}
+
+.section-title{
+    padding-top: 10px;
+}
+
+.section-even{
+    background-color: #f17e0a;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    height: 90px;
+    text-align: center;
+}
+
+footer p{
+    padding: 35px 0;
+}
+
+
+
+
+/* -------------------- */
+/*        for PC        */
+/* -------------------- */
+@media screen and (min-width: 418px) {
+    p{
+        font-weight: 300;
+    }
+
+    .logo{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    nav{
+        display: flex;
+        vertical-align: middle;
+        padding-left:0
+    }
+    
+    nav li{
+        padding-left: 30px;
+        padding-top: 9px;
+    }
+
+    header{
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .header-container{
+        display: flex;
+        width: 1100px;
+        margin: auto;
+        justify-content: space-between;
+        vertical-align: middle;
+    }
+
+    #article-read-more{
+        height: 445px;
+        padding: 16px 16px;
+        /* background-image: url("https://images.unsplash.com/photo-1670007770799-8ae5d669c923?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"); */
+        background-image: url("../images/pc.jpg");
+        background-position: top;
+        background-size: cover;
+    }
+    
+    #article-read-more h2{
+        margin: 16px 0;
+        margin-top: 0;
+        font-size: 60px;
+    }
+
+    #article-read-more h3,p{
+        margin: 50px 0;
+        margin-top: 0;
+    }
+    
+
+}
+
+
+
+
+/* -------------------- */
+/*        for SP        */
+/* -------------------- */
+@media screen and (max-width: 417px) {
+    body{
+        width: fit-content;
+    }
+
+    p{
+        font-size: 11px;
+        line-height: 1.6em;
+    }
+
+    .header-container{
+        text-align: center;
+    }
+
+    .header-container h6{
+        margin-bottom: 0;
+        padding-top: 15px;
+        padding-bottom: 3px;
+    }
+
+    nav{
+        padding-bottom: 5px;
+    }
+
+    li{
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    li:hover{
+        background-color: #444;
+    }
+
+    #article-read-more h2{
+        margin: 16px 0;
+        margin-top: 0;
+        font-size: 50px;
+    }
+
+    .main-container{
+        width: 375px;
+        margin: auto;
+        text-align: center;
+        padding-top: 58px;
+        padding-bottom: 36px;
+    }
+
+    #article-read-more{
+        height: 365px;
+        padding: 16px 16px;
+        /* background-image: url("https://images.unsplash.com/photo-1670007770799-8ae5d669c923?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"); */
+        background-image: url("../images/sp.jpg");
+        background-position: top;
+        background-size: cover;
+    }
+
+    #article-read-more h3,p{
+        margin: 18px 0;
+        margin-top: 0;
+    }
+}
+
+
